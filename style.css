@@ -119,6 +119,7 @@ body{
     text-align: center;
 }
 .card{
+    /* max-width: 25rem; */
     width: 25rem;
     background-color: var(--darkgrey);
     padding: 1em;
@@ -126,6 +127,14 @@ body{
     flex-direction: column;
     align-items: center;
     border-radius: 1em;
+}
+@media screen and (max-width: 600px) {
+    footer{
+        display: none;
+    }
+    .card{
+        max-width: 20rem;
+    }
 }
 .card-top{
     line-height: normal;
@@ -139,6 +148,9 @@ img{
     border-radius: 50%;
     width: 33.3%;
 }
+p{
+    font-size: small;
+}
 h2{
     margin: 0;
     padding: 0;
@@ -150,16 +162,16 @@ p{
     color: var(--white);
 }
 ul{
-    max-width: 100%;
-    width: inherit;
+    width: 100%;
     list-style-type: none;
     padding-left: 0;
+    padding: .5rem;
 }
 li{
     background-color: var(--grey);
     padding: .8em;
     border-radius: .5em;
-    margin-top: .5em;
+    margin-top: .7em;
     margin-bottom: .5em;
     cursor: pointer;
     font-weight: var(--mid);
